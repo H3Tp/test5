@@ -1,0 +1,23 @@
+<h2>
+    Student List
+</h2>
+
+<table border="1px">
+    <thead>
+        <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Program</th>
+            <th>GPA</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each students}}
+        <tr>
+            <td>{{this.studId}}</td>
+            <td>{{this.name}}</td>
+            <td>{{this.program}}</td>
+            <td>{{this.gpa}}</td>
+        </tr>
+        {{/each}}
+</table>
